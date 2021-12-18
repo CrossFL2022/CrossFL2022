@@ -224,8 +224,34 @@
 
     <p>Machine Learning and Deep Neural Networks have been gaining more and more traction in a range of tasks across modalities, such as image recognition, text mining as well as ASR. Commonly represented as execution graphs, they can be found deployed in a range of devices, from large servers in data centers to small embedded devices, offering them intelligent capabilities. A common denominator between these diverse devices is that they are connected, thus enabling them to collaboratively work towards the learning or inference task.</p>
 
-<p>Be it in a distributed environment, such as a data center, or a highly heterogeneous embedded deployment in the wild, distributed ML poses various challenges from a systems, interconnection and ML theoretical perspective. 
-In this workshop, we want to focus on the network-side of such distributed setups, the unique challenges it presents and novel solutions for optimising distributed learning tasks. More specifically, we welcome papers in the following areas:</p>
+<p>Timeliness of federated learning. Federated Learning (FL) has recently emerged as the de facto
+  framework for distributed machine learning (ML) beyond data centers that preserves the privacy
+  of data, especially in the proliferation of mobile and edge devices with their increasing capacity
+  for sensing, computation and storage. To fully utilize the vast amount of distributed, diverse
+  and privately owned data that is stored across these devices, FL provides a platform on which
+  local devices can build their own local models whose training processes can be synchronized via
+  sharing model updates rather than raw data. Such potential use of FL has since then led to an
+  explosive attention from the ML, systems, optimization, signal processing and wireless networking
+  communities. During recent years, a growing amount of both theoretical and empirical research
+  pushes FL closer to being the new standard of ML as a democratized data analytic service.
+  Importance of breaking community barriers. FL-related research is evolving at a rapid pace and is
+  penetrating into almost every scientific and technologic society. However, as FL comes closer to
+  being deployable in real-world scenarios, many open problems in FL today cannot be solved solely
+  by researchers in one community. For example, most ML algorithms were originally designed for
+  data center environments, but learning in data centers is markedly distinct from learning on devices
+  because devices are resource constrained (e.g., bandwidth, memory, and energy), and they can be
+  less reliable due to factors such as privacy leakage and malicious attacks. Designing most effcient
+  and reliable FL algorithms require leveraging expertises from systems, security, signal processing
+  and networking communities. On the other hand, current computing and networking systems are
+  designed for content-centric applications using metrics such as latency and throughput, but FL
+  traffc is fundamentally different from its traditional counterpart. Specifically, most FL algorithms
+  are iterative, but not every iteration of algorithms or every bit of data is equally important. Therefore, designing most effcient and scalable computing and networking systems require leveraging
+  collaborative advances from ML, data mining, and optimization communities.
+  Ultimate goal. In light of the differences in education backgrounds, cultures, toolboxes, viewpoints,
+  and design principles of different communities, this workshop aims to break community barriers
+  and bring researchers from pertinent communities together to address open problems in FL. More
+  importantly, this workshop aims to stimulate discussion among experts in different fields (e.g.,
+  industry and academia) and identify new problems that remain underexplored from an interdisciplinary perspective</p>
 
 <ul>
   <li>Distributed inference and offloading</li>
