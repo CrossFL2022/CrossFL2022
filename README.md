@@ -1,3 +1,3 @@
-# MLSys2022-FLworkshop
+# CrossFL2022
 
-This is the website for the FL workshop at MLSys2022.
+This is the website for the inter-disciplinary FL workshop at MLSys2022.
