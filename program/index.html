@@ -285,13 +285,14 @@
     <tr>
       <th>Time (PST)</th>
       <th>Title</th>
-      <th>TSpeaker</th>
+      <th>Speaker</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><strong>8.55 - 9.00</strong></td>
       <td>Opening remarks </td>
+      <td> <\td>
     </tr>
     <tr>
       <td><strong>9.00 - 9.40</strong></td>
@@ -301,12 +302,56 @@
                                   
                                   <div class="mid" id="speaker1" style="display: none;">
                                   <br>
-                                  DWe introduce ProxSkip -- a surprisingly simple and provably efficient method for minimizing the sum of a smooth ($f$) and an expensive nonsmooth proximable ($\psi$) function. The canonical approach to solving such problems is via the proximal gradient descent (ProxGD) algorithm, which is based on the evaluation of the gradient of $f$ and the prox operator of $\psi$ in each iteration. In this work we are specifically interested in the regime in which the evaluation of prox is costly relative to the evaluation of the gradient, which is the case in many applications. ProxSkip allows for the expensive prox operator to be skipped in most iterations: while its iteration complexity is $O(\kappa \log \frac{1}{\varepsilon})$, where $\kappa$ is the condition number of $f$, the number of prox evaluations is $O(\sqrt{\kappa} \log \frac{1}{\varepsilon})$ only. Our main motivation comes from federated learning, where evaluation of the gradient operator corresponds to taking a local GD step independently on all devices, and evaluation of prox corresponds to (expensive) communication in the form of gradient averaging. In this context, ProxSkip offers an effective acceleration of communication complexity. Unlike other local gradient-type methods, such as FedAvg, SCAFFOLD, S-Local-GD and FedLin, whose theoretical communication complexity is worse than, or at best matching, that of vanilla GD in the heterogeneous data regime, we obtain a provable and large improvement without any heterogeneity-bounding assumptions. </div>
+                                  We introduce ProxSkip -- a surprisingly simple and provably efficient method for minimizing the sum of a smooth ($f$) and an expensive nonsmooth proximable ($\psi$) function. The canonical approach to solving such problems is via the proximal gradient descent (ProxGD) algorithm, which is based on the evaluation of the gradient of $f$ and the prox operator of $\psi$ in each iteration. In this work we are specifically interested in the regime in which the evaluation of prox is costly relative to the evaluation of the gradient, which is the case in many applications. ProxSkip allows for the expensive prox operator to be skipped in most iterations: while its iteration complexity is $O(\kappa \log \frac{1}{\varepsilon})$, where $\kappa$ is the condition number of $f$, the number of prox evaluations is $O(\sqrt{\kappa} \log \frac{1}{\varepsilon})$ only. Our main motivation comes from federated learning, where evaluation of the gradient operator corresponds to taking a local GD step independently on all devices, and evaluation of prox corresponds to (expensive) communication in the form of gradient averaging. In this context, ProxSkip offers an effective acceleration of communication complexity. Unlike other local gradient-type methods, such as FedAvg, SCAFFOLD, S-Local-GD and FedLin, whose theoretical communication complexity is worse than, or at best matching, that of vanilla GD in the heterogeneous data regime, we obtain a provable and large improvement without any heterogeneity-bounding assumptions. </div>
       </td>
       <td>
            <a href="https://richtarik.org/"> Peter Richtarik </a>(KAUST)
       </td>
        
+  </tr>
+  <tr>
+      <td><strong>9.40 - 10.20</strong></td>
+      <td> <strong>Invited Talk</strong> 
+        <br>
+        Three daunting challenges of federated learning: privacy leakage, label deficiency, and resource constraints <a onclick="javascript:ShowHide('speaker2')">[abstract]</a>
+                                  
+                                  <div class="mid" id="speaker2" style="display: none;">
+        <br>
+                                   Federated learning (FL) has emerged as a promising approach to enable decentralized machine learning directly at the edge, in order to enhance users’ privacy, comply with regulations, and reduce development costs. In this talk, I will provide an overview of FL and highlight three fundamental challenges for landing FL into practice: (1) privacy and security guarantees for FL; (2) label scarcity at the edge; and (3) FL over resource-constrained edge nodes. I will also provide a brief overview of FedML (<a href="https://fedml.ai"> https://fedml.ai </a>), which is a platform that enables zero-code, lightweight, cross-platform, and provably secure federated learning and analytics. </div>
+      </td>
+      <td>
+           <a href="https://www.avestimehr.com/"> Salman Avestimehr </a>(USC)
+      </td>
+       
+  </tr>
+  <tr>
+      <td><strong>10.20 - 11.00</strong></td>
+      <td> <strong>Invited Talk</strong> 
+        <br>
+        Federated Learning for EdgeAI: New Ideas and Opportunities for Progress <a onclick="javascript:ShowHide('speaker3')">[abstract]</a>
+                                  
+                                  <div class="mid" id="speaker3" style="display: none;">
+        <br>
+                                    EdgeAI aims at the widespread deployment of AI on edge devices. To this end, a critical requirement of future ML systems is to enable on-device automated training and inference in distributed settings, wherever and whenever data, devices, or users are present, without sending the training (possibly sensitive) data to the cloud or incurring long response times.
+Starting from these overarching considerations, we consider on-device distributed learning, the hardware it runs on, and their co-design to allow for efficient federated learning and resource-aware deployment on edge devices. We hope to convey the excitement of working in this problem space that brings together topics in ML, optimization, communications, and application-hardware (co-)design. </div>
+      </td>
+      <td>
+           <a href="https://radum.ece.utexas.edu/"> Radu Marculescu </a>(UT Austin)
+      </td>
+  </tr>
+  <tr>
+      <td><strong>11.00 - 11.40</strong></td>
+      <td> <strong>Invited Talk</strong> 
+        <br>
+        Model Based Deep Learning with Applications to Federated Learning <a onclick="javascript:ShowHide('speaker4')">[abstract]</a>
+                                  
+                                  <div class="mid" id="speaker4" style="display: none;">
+        <br>
+                                    Deep neural networks provide unprecedented performance gains in many real-world problems in signal and image processing. Despite these gains, the future development and practical deployment of deep networks are hindered by their black-box nature, i.e., a lack of interpretability and the need for very large training sets. On the other hand, signal processing and communications have traditionally relied on classical statistical modeling techniques that utilize mathematical formulations representing the underlying physics, prior information and additional domain knowledge. Simple classical models are useful but sensitive to inaccuracies and may lead to poor performance when real systems display complex or dynamic behavior. Here we introduce various approaches to model based learning which merge parametric models with optimization tools and classical algorithms leading to efficient, interpretable networks from reasonably sized training sets. We then show how model based signal processing can impact federated learning both in terms of communication efficiency and in terms of convergence properties. We will consider examples to image deblurring, super resolution in ultrasound and microscopy, efficient communication systems, and efficient diagnosis of COVID19 using X-ray and ultrasound. </div>
+      </td>
+      <td>
+           <a href="https://www.weizmann.ac.il/math/yonina/"> Yonina Eldar </a>(Weizmann)
+      </td>
   </tr>
   </tbody>
 </table>
