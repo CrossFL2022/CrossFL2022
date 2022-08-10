@@ -267,7 +267,6 @@
   </ul>  
  <br>
  
- <!-- 
  <table>
   <thead>
     <tr>
@@ -282,16 +281,16 @@
     </tr>
     <tr>
       <td><strong>9.00 - 9.40</strong></td>
-      <td> <strong>Invited Talk:<strong> ProxSkip: Yes! Local Gradient Steps Provably Lead to Communication Acceleration! Finally!
+      <td> <strong>Invited Talk:</strong> ProxSkip: Yes! Local Gradient Steps Provably Lead to Communication Acceleration! Finally!
            <br>
-           <strong>Speaker:<strong> <a href="https://richtarik.org/"> Peter Richtarik </a>(KAUST)
+           <strong>Speaker:</strong> <a href="https://richtarik.org/"> Peter Richtarik </a>(KAUST)
       </td>
       <td><a onclick="javascript:ShowHide('speaker1')">[abstract]</a> </td></tr>
                               <tr><td colspan=4>
                                   <div class="mid" id="speaker1" style="display: none;">
                                   DWe introduce ProxSkip -- a surprisingly simple and provably efficient method for minimizing the sum of a smooth ($f$) and an expensive nonsmooth proximable ($\psi$) function. The canonical approach to solving such problems is via the proximal gradient descent (ProxGD) algorithm, which is based on the evaluation of the gradient of $f$ and the prox operator of $\psi$ in each iteration. In this work we are specifically interested in the regime in which the evaluation of prox is costly relative to the evaluation of the gradient, which is the case in many applications. ProxSkip allows for the expensive prox operator to be skipped in most iterations: while its iteration complexity is $O(\kappa \log \frac{1}{\varepsilon})$, where $\kappa$ is the condition number of $f$, the number of prox evaluations is $O(\sqrt{\kappa} \log \frac{1}{\varepsilon})$ only. Our main motivation comes from federated learning, where evaluation of the gradient operator corresponds to taking a local GD step independently on all devices, and evaluation of prox corresponds to (expensive) communication in the form of gradient averaging. In this context, ProxSkip offers an effective acceleration of communication complexity. Unlike other local gradient-type methods, such as FedAvg, SCAFFOLD, S-Local-GD and FedLin, whose theoretical communication complexity is worse than, or at best matching, that of vanilla GD in the heterogeneous data regime, we obtain a provable and large improvement without any heterogeneity-bounding assumptions. </div> </tr>
   </tbody>
-</table>-->
+</table>
      
  <br> 
  <p><font size="+2"><strong>Sponsors</strong></font><p>
@@ -325,7 +324,7 @@
     <tr>
       <td><strong>11.15 - 12.00</strong></td>
       <td><strong>Keynote #1</strong> <a href="/talks/comms_acceleration_for_training/">Systematic Communication Acceleration for Distributed DNN Training</a> (<a href="https://www.youtube.com/watch?v=xkLHoRtDiCs">video</a>) <br /><small><a href="/speakers/chuanxiong_guo/">Chuanxiong Guo</a> (Bytedance Inc)</small></td>
-    </tr>
+    </tr> 
     <tr>
       <td><strong>12.00 - 12.40</strong></td>
       <td><strong>Session #1</strong>: Distributed Learning <small> (co-ordinated by <a href="https://nms.kcl.ac.uk/osvaldo.simeone/index.htm">Osvaldo Simeone</a>) </small> <br />- <a href="https://dl.acm.org/doi/10.1145/3488659.3493778">Doing More by Doing Less: How Structured Partial Backpropagation Improves Deep Learning Clusters</a> (<a href="https://www.dropbox.com/s/1mijlqk3hjso64t/adarsh%20kumar%20-%20JigSawTalk_DistributedML_2021.mp4?dl=0">video</a>) <br /><small>Adarsh Kumar (Amazon Alexa AI), Kausik Subramanian, Shivaram Venkataraman (University of Wisconsin, Madison), Aditya Akella (University of Texas at Austin)</small> <br /> - Invited: Decentralised Deep Learning: Training Large Neural Networks Together (<a href="https://www.youtube.com/watch?v=7ANuu_k27eQ">video</a>) <br /><small> Max Ryabinin (HSE University and Yandex)</small></td>
